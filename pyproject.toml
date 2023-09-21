@@ -48,6 +48,7 @@ textual = [
 format = { shell = "black . && isort ." }
 lint = { shell = "pyright && flake8" }
 test = "pytest ."
+dev = "textual run --dev -c py -m cyrus"
 coverage = { shell = "coverage run -m pytest && coverage report && coverage xml" }
 precommit = { shell = "pdm run pre-commit run --all-files" }
 all = { composite = ["format", "lint", "test", "coverage"] }
