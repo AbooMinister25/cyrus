@@ -2,4 +2,7 @@
 
 from __future__ import annotations
 
-print("Hello World")
+from . import main
+
+if __name__ == '__main__':
+    main()
