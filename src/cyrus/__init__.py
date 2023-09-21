@@ -10,6 +10,7 @@ class Cyrus(App[None]):
     """A TUI based Markdown editor."""
 
     BINDINGS = [("q", "quit", "Quit")]
+    CSS_PATH = "styles/style.css"
 
     def compose(self) -> ComposeResult:
         yield Header()
